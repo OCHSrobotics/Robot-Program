@@ -21,6 +21,10 @@
  * configure a UART port (usartOpen()) but cannot set up an LCD (lcdInit()).
  */
 void initializeIO() {
+  pinMode(LIMIT_SWITCH, 1);
+  pinMode(LIMIT_SWITCH2, 2);
+  pinMode(LIMIT_SWITCH3, 3);
+  pinMode(LIMIT_SWITCH4, 4);
 }
 
 /*

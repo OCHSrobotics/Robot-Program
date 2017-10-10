@@ -11,6 +11,11 @@
  */
 
 #include "main.h"
+#include "drive.cpp"
+#include "grabber.cpp"
+#include "grabberheight.cpp"
+#include "genevadrive.cpp"
+
 
 /*
  * Runs the user operator control code. This function will be started in its own task with the
@@ -24,13 +29,10 @@
  * tethered directly to a computer via the USB A to A cable without any VEX Joystick attached.
  *
  * Code running in this task can take almost any action, as the VEX Joystick is available and
- * the scheduler is operational. However, proper use of delay() or taskDelayUntil() is highly
+ * the scheduler is operational. However, proper use of delay() or taskDelayUntil() is highl
  * recommended to give other tasks (including system tasks such as updating LCDs) time to run.
  *
  * This task should never exit; it should end with some kind of infinite loop, even if empty.
  */
 void operatorControl() {
-	while (1) {
-		delay(20);
-	}
 }
